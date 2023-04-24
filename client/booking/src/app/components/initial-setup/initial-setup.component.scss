@@ -1,0 +1,76 @@
+.logo img {
+  width: 30px;
+  /* adjust this to your desired width */
+  height: auto;
+}
+
+.logo {
+  color: white;
+
+}
+
+.rbs {
+  font-family: 'Staatliches';
+}
+
+.contact {
+  padding-left: 57rem;
+}
+
+.navdiv {
+  justify-content: space-between;
+}
+
+.btn1 {
+  color: white;
+  border: 1px solid white;
+}
+
+.btn2 {
+  color: black;
+  border: 1px solid black;
+}
+
+.background-image {
+  background-image: url('https://img.freepik.com/free-photo/people-watching-as-train-approaches_1353-227.jpg?w=996&t=st=1682055828~exp=1682056428~hmac=fa9f0b2a50d17879cc693f184cd9e5881cc06e74d44234556717dc1f9ae41efd');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+
+}
+
+.nav1 {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+/* app.component.css */
+.container {
+  height: 100%;
+
+}
+
+.card {
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.title {
+  font-size: 2rem;
+  color: red;
+  font-family: 'bebas Neue';
+  margin-left: 12px;
+}
+
+.div2 {
+  padding-right: 600px;
+  padding-top: 150px;
+}

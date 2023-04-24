@@ -1,1 +1,35 @@
-<p>initial-setup works!</p>
+<nav class="nav1">
+  <div class="navdiv">
+  <span class="logo"><img src="assets/images/7995412.svg"/></span>
+  <span class="rbs">Railway Booking System</span>
+  <span class="contact"> <button class="btn1 btn btn-outline-success" type="submit">Contact Us</button></span>
+  </div> 
+</nav>
+<!-- app.component.html -->
+<div class="background-image">
+  <div class="div2">
+    <mat-card class="card">
+      <mat-card-header class="title">
+        <mat-card-title>BOOK TICKET</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <mat-form-field>
+            <label>From</label>
+            <input placeholder="Source">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <label>To</label>
+            <input placeholder="Destination">
+          </mat-form-field>
+          <br>
+          <hr>
+          <button mat-raised-button color="primary" class="btn2 btn btn-outline-success" routerLink="train-selection">Submit</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
