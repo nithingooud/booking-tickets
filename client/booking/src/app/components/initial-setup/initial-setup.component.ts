@@ -1,5 +1,5 @@
-import { Component, OnInit ,NgModule} from '@angular/core';
-import { Router } from '@angular/router'; 
+import { Component, OnInit, NgModule } from '@angular/core';
+import { Router } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
@@ -9,14 +9,16 @@ import { MatMenuModule } from '@angular/material/menu';
 })
 
 export class InitialSetupComponent implements OnInit {
-  
-  constructor(private router:Router) { }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-  
-  goToContact(){
-      this.router.navigate(['/pdetails']);
+
+  goToContact(source: any, destination: any) {
+    if (source.length > 0 && destination.length > 0) {
+      this.router.navigate(['/train-selection']);
+    }
   }
-  
+
 }

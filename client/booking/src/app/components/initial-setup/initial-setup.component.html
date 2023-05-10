@@ -16,16 +16,16 @@
         <form>
           <mat-form-field>
             <label>From</label>
-            <input placeholder="Source">
+            <input #sourceInput placeholder="Source">
           </mat-form-field>
           <br>
           <mat-form-field>
             <label>To</label>
-            <input placeholder="Destination">
+            <input #destinationInput placeholder="Destination">
           </mat-form-field>
           <br>
           <hr>
-          <button mat-raised-button color="primary" class="btn2 btn btn-outline-success" routerLink="train-selection">Submit</button>
+          <button mat-raised-button color="primary" class="btn2 btn btn-outline-success" (click)="goToContact(sourceInput.value,destinationInput.value)">Submit</button>
         </form>
       </mat-card-content>
     </mat-card>

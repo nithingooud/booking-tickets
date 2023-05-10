@@ -2,3 +2,12 @@
     <span class="rbs">Passenger Details</span>
 </nav>
 
+<div class="centered-container">
+    <p>  Select number of passengers</p>
+    <input #passengerInput type="number" placeholder="Enter">
+    
+    <div style="padding-top: 6px;" >
+        <button [disabled]="!passengerInput.value && +passengerInput.value>7"
+          mat-raised-button (click)="onSubmit(passengerInput.value)">submit</button>
+      </div>
+</div>

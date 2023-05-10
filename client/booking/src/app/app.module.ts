@@ -13,13 +13,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { TrainSelectionComponent } from './components/train-selection/train-selection.component';
+import { CommonModule } from '@angular/common';
+
+import { ToastrModule } from 'ngx-toastr';
+import { BookingCompletedComponent } from './components/booking-completed/booking-completed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InitialSetupComponent,
     PdetailsComponent,
-    TrainSelectionComponent
+    TrainSelectionComponent,
+    BookingCompletedComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,9 @@ import { TrainSelectionComponent } from './components/train-selection/train-sele
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    CommonModule,
+    ToastrModule
   ],
   providers: [],
   bootstrap: [AppComponent]
